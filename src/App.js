@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
+import SpinWheel from './SpinWheel'
+import HomePage from './HomePage'
+import Reward from './Reward'
+import bg1 from './assets/bg1.png'
+import bg2 from './assets/bg2.png'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='bg-theme-green max-h-screen max-w-screen'>
+      <img src={bg1} className="absolute top-0" />
+      <img src={bg2} className="absolute bottom-0" />
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route exact path="/spin" element={<SpinWheel />} />
+                <Route exact path="/reward" element={<Reward />} />
+            </Routes>
+        </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
