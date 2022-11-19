@@ -21,7 +21,7 @@ const HomePage = () => {
         <p className='ml-2 font-bold text-2xl md:text-3xl text-left mb-4'>looks like in action!</p>
         <Input type="Email"/>
         <Input type="Call"/>
-        <div className="border-2 border-black p-3 rounded-lg m-1 mx-4">
+        <div className="border-2 border-black p-3 rounded-lg m-1 mx-2">
         <Checkbox
         icon={
           <div
@@ -38,7 +38,7 @@ const HomePage = () => {
         borderColor="#146531"
         style={{ overflow: "hidden", }}
         size={25}
-        labelStyle={{fontSize:"11px", marginLeft:"12px",maxWidth:"70vw"}}
+        labelStyle={{fontSize:"11px", paddingLeft:"12px",maxWidth:"90%",}}
         label="I agree to receiving recurring automated messages at the number I have provided.
         Consent is not a condition to purchase."
       />
