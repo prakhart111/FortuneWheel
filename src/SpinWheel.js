@@ -14,27 +14,27 @@ function SpinWheel() {
   const items = [
     {
       angle:"0deg",
-      reward:"30% SITEWIDE OFF",
+      reward:"Rs. 100 OFF",
     },
     {
       angle:"60deg",
-      reward:"BUY 1 GET1 FREE",
+      reward:"Buy 2 Get 1 FREE on Biscuits",
     },
     {
       angle:"120deg",
-      reward:"FREE COFFEE MUG ON PURCHASE WORTH 1000+",
+      reward:"Better Luck Next Time",
     },
     {
       angle:"180deg",
-      reward:"Buy 2 Effervescent tablets & get 1 free",
+      reward:"FREE Cadbury Celebrations",
     },
     {
       angle:"240deg",
-      reward:"Free 50g tea on purchase of Rs. 500",
+      reward:"10% OFF",
     },
     {
       angle:"300deg",
-      reward:"HOT CHOCLATE FREE WITH TEA",
+      reward:"Better Luck Next Time",
     }
   ];
   const spinIt = ()=>{
